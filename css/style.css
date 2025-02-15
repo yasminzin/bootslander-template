@@ -468,6 +468,12 @@ div.overlay {
   width: 60%;
 }
 
+.carousel-indicators button {
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+}
+
 /* Team */
 .team-container h2 {
   color: rgb(4, 6, 119);
