@@ -1,6 +1,5 @@
 const loader = document.querySelector(".loader");
 const nav = document.querySelector(".navbar");
-console.log(nav);
 
 setTimeout(() => {
   loader.style.transition = "opacity 0.3s ease";

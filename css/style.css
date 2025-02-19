@@ -8,6 +8,16 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+ul li {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Loader */
@@ -115,7 +125,6 @@ nav {
 }
 
 .image-container img {
-  /* position: absolute; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -127,9 +136,6 @@ div.overlay {
   height: auto;
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
   padding: 0;
   margin: 0;
 }
@@ -156,7 +162,6 @@ div.overlay {
   width: 100%;
   padding: 0;
   margin: 0;
-  /* margin-top: 100px; */
 }
 
 /* Flex Content */
@@ -186,9 +191,6 @@ div.overlay {
 .waves {
   width: 100%;
   height: 15vh;
-  /*Fix for safari gap*/
-  /* min-height: 100px;
-  max-height: 300px; */
   z-index: 1000;
 }
 
@@ -396,7 +398,7 @@ div.overlay {
 .carousel-overlay {
   background: color-mix(in srgb, #08005e, transparent 30%);
   width: 100%;
-  height: 500px;
+  height: 600px;
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -446,7 +448,7 @@ div.overlay {
 }
 
 .carousel-caption .icons {
-  margin: 20px 0;
+  margin: 5px 0;
 }
 
 .carousel-caption .icons i {
@@ -456,6 +458,23 @@ div.overlay {
 .carousel-caption .p-icons i {
   color: #b5adc2;
   padding: 0 5px;
+}
+
+@media (max-width: 520px) {
+  .carousel-caption p {
+    color: #b5adc2;
+    font-size: 12px;
+    padding: 0 5px;
+    font-weight: 600;
+  }
+  .carousel-caption .icons i {
+    color: #ffc107;
+    font-size: 14px;
+  }
+  .carousel-caption h5 {
+    margin: 0;
+    font-size: 14px;
+  }
 }
 
 .carousel-caption p:nth-of-type(1) {
@@ -494,4 +513,265 @@ div.overlay {
   height: 1px;
   background-color: #1acc8d;
   margin: 5px 10px;
+}
+
+.team-content {
+  width: 90%;
+  margin: auto;
+  transform: translateY(-50px);
+  background-color: #fff;
+  padding: 15px;
+}
+
+.team-content h5 {
+  color: rgb(4, 6, 119);
+  margin: 0;
+}
+
+.team-content div:nth-of-type(1) {
+  width: 50px;
+  display: inline-block;
+  height: 0.7px;
+  background-color: color-mix(in srgb, #535252, transparent 20%);
+  margin: 7px 0;
+}
+
+.team-content p {
+  color: color-mix(in srgb, #7d7c7c, transparent 20%);
+  padding: 0;
+  margin: 0;
+}
+
+.team-content .icons i {
+  color: #c7c5c6;
+  padding-left: 9px;
+}
+
+/* Pricing */
+.pricing-container h2 {
+  color: rgb(4, 6, 119);
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.pricing-container span {
+  text-transform: uppercase;
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.5);
+  letter-spacing: 1px;
+}
+
+.pricing-container span::after {
+  content: "";
+  width: 120px;
+  display: inline-block;
+  height: 1px;
+  background-color: #1acc8d;
+  margin: 5px 10px;
+}
+
+.pricing-up .card {
+  background-color: #f7fdfb;
+  .below-header {
+    color: #444444;
+  }
+  .price {
+    color: #1acc8e;
+  }
+  .price span {
+    color: color-mix(in srgb, #444444, transparent 50%);
+  }
+}
+
+.pricing-up .card-header {
+  color: #040677;
+  background-color: #f7fdfb;
+  border: none;
+}
+
+.pricing-up .btn-trial {
+  background-color: #f7fdfb;
+  border: 1px solid #444444;
+  color: #444444;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.pricing-up .btn-middle {
+  background-color: #1acc8d;
+  color: #ffffff;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.pricing-up .debit {
+  color: #444444;
+  margin-top: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.pricing-up .advan div {
+  color: color-mix(in srgb, #444444, transparent 30%);
+  padding-bottom: 25px;
+  font-weight: 500;
+}
+
+.pricing-up .advan div span i {
+  color: #059652;
+  padding-right: 10px;
+}
+
+.pricing-up .advan p {
+  display: inline-block;
+}
+
+/* FAQ */
+.faq {
+  background-color: #f5f5ff;
+  height: auto;
+}
+
+.faq .faq-header h3 {
+  color: rgb(4, 6, 119);
+  padding-bottom: 10px;
+}
+
+.faq .faq-header p {
+  color: color-mix(in srgb, #444444, transparent 30%);
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.accordion-item h2 button {
+  color: rgb(4, 6, 119) !important;
+}
+
+.accordion-item span i {
+  color: #1acc8d;
+  padding-right: 10px;
+}
+
+/* Contact */
+.contact-container h2 {
+  color: rgb(4, 6, 119);
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.contact-container span {
+  text-transform: uppercase;
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.5);
+  letter-spacing: 1px;
+}
+
+.contact-container span::after {
+  content: "";
+  width: 120px;
+  display: inline-block;
+  height: 1px;
+  background-color: #1acc8d;
+  margin: 5px 10px;
+}
+
+.contact-up i {
+  color: #1acc8d;
+}
+
+.contact-up input {
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  border: color-mix(in srgb, #444444, transparent 50%) 1px solid;
+  border-radius: 5px;
+}
+
+.contact-up textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin: 10px;
+  border: color-mix(in srgb, #444444, transparent 50%) 1px solid;
+  border-radius: 5px;
+}
+
+.contact-up button {
+  background-color: #1acc8d;
+  color: #ffffff;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 30px;
+}
+
+/* Footer */
+.footer {
+  background-color: #07005f;
+  height: auto;
+}
+
+.footer h3,
+.footer h5 {
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-family: "Roboto", serif;
+}
+
+.footer p {
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+
+.footer ul li {
+  color: #aba8df;
+  font-family: "Roboto", serif;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer ul  {
+  padding: 0;
+}
+
+.footer i {
+  color: rgba(255, 255, 255, 0.592);
+  padding: 0 10px;
+  font-size: 20px;
+  border: 1px rgba(255, 255, 255, 0.284) solid;
+  border-radius: 50%;
+  padding: 20px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .icons {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .input-group-text {
+  background-color: #1acc8d;
+}
+
+.footer form {
+  margin-top: 40px;
+}
+
+.footer .copy {
+  padding: 20px;
 }
