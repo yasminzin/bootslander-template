@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#about"
+              <a class="nav-link active" href="#overlay"
                 ><span class="bordered">Ho</span>me</a
               >
             </li>
@@ -61,22 +61,22 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#textCarousel"
+              <a class="nav-link" href="#cards"
                 ><span class="bordered">Fea</span>tures</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#textCarousel"
+              <a class="nav-link" href="#gallery"
                 ><span class="bordered">Ga</span>llery</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#textCarousel"
+              <a class="nav-link" href="#team"
                 ><span class="bordered">Te</span>am</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#textCarousel"
+              <a class="nav-link" href="#pricing"
                 ><span class="bordered">Pri</span>cing</a
               >
             </li>
@@ -110,7 +110,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="overlay container-fluid">
+    <div class="overlay container-fluid" id="overlay">
       <div class="overlay-in container-fluid position-relative">
         <div class="container-fluid image-container p-0">
           <img src="images/hero-bg-2.jpg" />
@@ -120,7 +120,7 @@
         >
           <div class="container">
             <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 col-md-12 col-sm-12 text-light">
+              <div class="col-lg-6 col-md-12 col-sm-12 text-light forAnimate">
                 <h1 class="display-5 fw-bold pb-3">
                   Build Your Landing Page With
                   <span class="text-white bootslander">Bootslander</span>
@@ -130,17 +130,17 @@
                   Bootstrap
                 </p>
                 <div class="d-flex align-items-center">
-                  <button class="btn rounded-pill px-4 py-2 me-3 get-started">
+                  <button class="btn rounded-pill px-4 py-2 me-3 get-started text-white fw-normal">
                     Get Started
                   </button>
-                  <a href="#" class="text-light d-flex align-items-center">
+                  <a href="#" class="text-light d-flex align-items-center watch-video">
                     <i class="fa-regular fa-circle-play fs-3"></i>
-                    <span class="ms-2">Watch Video</span>
+                    <span class="ms-2 watch fw-bold">Watch Video</span>
                   </a>
                 </div>
               </div>
               <div
-                class="col-lg-6 col-md-12 col-sm-12 image-move pt-5 px-5 text-center"
+                class="col-lg-6 col-md-12 col-sm-12 image-move pt-5 px-5 text-center forAnimate"
               >
                 <img src="images/hero-img.png" class="img-fluid" alt="" />
               </div>
@@ -189,9 +189,9 @@
     </div>
 
     <!-- About -->
-    <div class="container my-5 about-up">
+    <div class="container my-5 about-up" id="about">
       <div class="row my-5 about align-items-center">
-        <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+        <div class="col-lg-6 col-md-12 col-sm-12 p-3 forAnimate">
           <button class="btn px-3 py-2 mb-4 fs-6">About Us</button>
           <h2 class="fw-bold">Ducimus rerum libero reprehenderit cumque</h2>
           <p>
@@ -205,10 +205,10 @@
             <i class="fa-solid fa-arrow-right text-white"></i>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="shadow p-5 rounded mb-4 mt-5">
             <div
-              class="d-flex justify-content-center align-items-center rounded-pill mb-3"
+              class="d-flex justify-content-center align-items-center rounded-pill mb-3 icon-div"
             >
               <i class="fa-regular fa-building fs-1"></i>
             </div>
@@ -220,7 +220,7 @@
           </div>
           <div class="shadow p-5 rounded">
             <div
-              class="d-flex justify-content-center align-items-center rounded-pill mb-3"
+              class="d-flex justify-content-center align-items-center rounded-pill mb-3 icon-div"
             >
               <i class="fa-regular fa-newspaper fs-1"></i>
             </div>
@@ -231,10 +231,10 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="shadow p-5 rounded mb-4">
             <div
-              class="d-flex justify-content-center align-items-center rounded-pill mb-3"
+              class="d-flex justify-content-center align-items-center rounded-pill mb-3 icon-div"
             >
               <i class="fa-solid fa-circle-nodes fs-1"></i>
             </div>
@@ -246,7 +246,7 @@
           </div>
           <div class="shadow p-5 rounded">
             <div
-              class="d-flex justify-content-center align-items-center rounded-pill mb-3"
+              class="d-flex justify-content-center align-items-center rounded-pill mb-3 icon-div"
             >
               <i class="fa-solid fa-square-poll-vertical fs-1"></i>
             </div>
@@ -261,9 +261,9 @@
     </div>
 
     <!-- Cards -->
-    <div class="container my-5 cards-up">
+    <div class="container my-5 cards-up" id="cards">
       <div class="row my-5 justify-content-center align-items-center cards">
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="p-4 mb-4 card-container">
             <i class="fa-solid fa-calendar-days text-primary fs-4"></i
             ><span class="fs-6 fw-bold d-inline-block px-3"> Lorem Ipsum</span>
@@ -277,7 +277,7 @@
             ><span class="fs-6 fw-bold d-inline-block px-3"> Moton Ideal</span>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="p-4 mb-4 card-container">
             <i class="fa-solid fa-landmark text-primary fs-4"></i
             ><span class="fs-6 fw-bold d-inline-block px-3"> Pira Neve</span>
@@ -291,7 +291,7 @@
             ><span class="fs-6 fw-bold d-inline-block px-3"> Lorem Ipsum</span>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="p-4 mb-4 card-container">
             <i
               class="fa-solid fa-magnifying-glass-arrow-right text-secondary fs-4"
@@ -307,7 +307,7 @@
             ><span class="fs-6 fw-bold d-inline-block px-3"> Moton Ideal</span>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <div class="p-4 mb-4 card-container">
             <i class="fa-solid fa-folder-tree text-warning fs-4"></i
             ><span class="fs-6 fw-bold d-inline-block px-3"> Pira Neve</span>
@@ -329,39 +329,39 @@
       <div
         class="row my-5 justify-content-center align-items-center mx-1 numbers"
       >
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5 forAnimate">
           <div class="bg-white shadow p-2">
             <div class="rounded-pill shadow">
               <i class="fa-solid fa-chart-pie fs-4"></i>
             </div>
-            <h4 class="fs-1 fw-bold">232</h4>
+            <h4 class="fs-1 fw-bold number">232</h4>
             <p>Happy Clients</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5 forAnimate">
           <div class="bg-white shadow p-2">
             <div class="rounded-pill shadow">
               <i class="fa-solid fa-chart-line fs-4"></i>
             </div>
-            <h4 class="fs-1 fw-bold">521</h4>
+            <h4 class="fs-1 fw-bold number">521</h4>
             <p>Projects</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5 forAnimate">
           <div class="bg-white shadow p-2">
             <div class="rounded-pill shadow">
               <i class="fa-solid fa-hexagon-nodes fs-4"></i>
             </div>
-            <h4 class="fs-1 fw-bold">1463</h4>
+            <h4 class="fs-1 fw-bold number">1463</h4>
             <p>Hours Of Support</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-5 forAnimate">
           <div class="bg-white shadow p-2">
             <div class="rounded-pill shadow">
               <i class="fa-solid fa-signal fs-4"></i>
             </div>
-            <h4 class="fs-1 fw-bold">15</h4>
+            <h4 class="fs-1 fw-bold number">15</h4>
             <p>Hard Workers</p>
           </div>
         </div>
@@ -377,14 +377,14 @@
       <div
         class="row details my-5 justify-content-center align-items-center mx-3 g-0"
       >
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5 forAnimate">
           <div
             class="image-details d-flex justify-content-center align-items-center flex-column"
           >
             <img src="images/details-1.png" class="img-fluid w-75" alt="" />
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 forAnimate">
           <div
             class="content-details d-flex justify-content-center flex-column"
           >
@@ -427,7 +427,7 @@
       <div
         class="row details my-5 justify-content-center align-items-center mx-3 g-0"
       >
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 forAnimate">
           <div
             class="content-details d-flex justify-content-center flex-column"
           >
@@ -453,7 +453,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5 forAnimate">
           <div
             class="image-details d-flex justify-content-center align-items-center flex-column"
           >
@@ -467,14 +467,14 @@
       <div
         class="row details my-5 justify-content-center align-items-center mx-3 g-0"
       >
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5 forAnimate">
           <div
             class="image-details d-flex justify-content-center align-items-center flex-column"
           >
             <img src="images/details-3.png" class="img-fluid w-75" alt="" />
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 forAnimate">
           <div
             class="content-details d-flex justify-content-center flex-column"
           >
@@ -520,7 +520,7 @@
       <div
         class="row details my-5 justify-content-center align-items-center mx-3 g-0"
       >
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 forAnimate">
           <div
             class="content-details d-flex justify-content-center flex-column"
           >
@@ -547,7 +547,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5 forAnimate">
           <div
             class="image-details d-flex justify-content-center align-items-center flex-column"
           >
@@ -558,7 +558,7 @@
     </div>
 
     <!-- Gallery -->
-    <div class="container-fluid gallery-up my-5 mx-auto">
+    <div class="container-fluid gallery-up my-5 mx-auto" id="gallery">
       <div class="container mb-5 gallery-container">
         <div><span>Gallery</span></div>
         <h2 class="fw-bold">Check Our Gallery</h2>
@@ -566,32 +566,32 @@
       <div
         class="row details justify-content-center align-items-center mx-3 g-1 pb-1"
       >
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-1.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-2.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-3.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-4.jpg" class="img-fluid" alt="" />
         </div>
       </div>
       <div
         class="row details justify-content-center align-items-center mx-3 g-1"
       >
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-5.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-6.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-7.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col">
+        <div class="col-lg-3 col-md-6 col-sm-12 gallery-col forAnimate">
           <img src="images/gallery-8.jpg" class="img-fluid" alt="" />
         </div>
       </div>
@@ -810,14 +810,14 @@
     </div>
 
     <!-- Team -->
-    <div class="container-fluid team-up my-5 mx-auto">
+    <div class="container-fluid team-up my-5 mx-auto" id="team">
       <div class="container team-container-container">
         <div class="container mb-5 team-container">
           <div><span>Team</span></div>
           <h2 class="fw-bold">Check Our Team</h2>
         </div>
         <div class="row details justify-content-center align-items-center g-3">
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="team-image text-center">
               <img src="images/team-1.jpg" class="img-fluid" alt="" />
             </div>
@@ -833,7 +833,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="team-image text-center">
               <img src="images/team-2.jpg" class="img-fluid" alt="" />
             </div>
@@ -849,7 +849,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="team-image text-center">
               <img src="images/team-3.jpg" class="img-fluid" alt="" />
             </div>
@@ -870,14 +870,14 @@
     </div>
 
     <!-- Pricing -->
-    <div class="container-fluid pricing-up my-5">
+    <div class="container-fluid pricing-up my-5" id="pricing">
       <div class="container pricing-container-container">
         <div class="container mb-5 pricing-container">
           <div><span>Pricing</span></div>
           <h2 class="fw-bold">Check Our Pricing</h2>
         </div>
         <div class="row details justify-content-center align-items-center g-4">
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="card border-white p-4">
               <h4 class="card-header fs-5 fw-semibold">Free Plan</h4>
               <div class="card-body">
@@ -938,8 +938,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="card border-white p-4">
+              <div class="d-flex justify-content-end align-items-center popular m-0 fw-bold"><div>Popular</div></div>
               <h4 class="card-header fs-5 fw-semibold">Business Plan</h4>
               <div class="card-body">
                 <p class="below-header fw-medium">
@@ -999,7 +1000,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div class="card border-white p-4">
               <h4 class="card-header fs-5 fw-semibold">Developer Plan</h4>
               <div class="card-body">
@@ -1068,7 +1069,7 @@
     <div class="faq container-fluid py-5">
       <div class="container faq-container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-lg-7 col-md-6 col-sm-12">
+          <div class="col-lg-7 col-md-6 col-sm-12 forAnimate">
             <div class="faq-header">
               <h3 class="fs-2 fw-normal">
                 Frequently Asked <span class="fw-bolder"> Questions</span>
@@ -1180,7 +1181,7 @@
           </div>
 
           <div
-            class="col-lg-5 col-md-6 col-sm-12 d-flex align-items-center justify-content-center"
+            class="col-lg-5 col-md-6 col-sm-12 d-flex align-items-center justify-content-center forAnimate"
           >
             <img
               src="images/faq.jpg"
@@ -1193,14 +1194,14 @@
     </div>
 
     <!-- Contact -->
-    <div class="container-fluid contact-up my-5">
+    <div class="container-fluid contact-up my-5" id="contact">
       <div class="container contact-container-container">
         <div class="container mb-5 contact-container">
           <div><span>Contact</span></div>
           <h2 class="fw-bold">Check Our Contact</h2>
         </div>
         <div class="row details justify-content-center align-items-center g-4">
-          <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12 forAnimate">
             <div>
               <span><i class="fa-solid fa-location-dot fs-5 pe-2 pb-3"></i></span>
               <span class="fs-6">info@example.com</span>
@@ -1214,9 +1215,9 @@
               <span>info@example.com</span>
             </div>
           </div>
-          <div class="col-lg-8 col-md-12 col-sm-12">
+          <div class="col-lg-8 col-md-12 col-sm-12 forAnimate">
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 forAnimate">
                 <input
                   type="text"
                   name="name"
@@ -1224,7 +1225,7 @@
                   placeholder="Your Name"
                 />
               </div>
-              <div class="col-6">
+              <div class="col-6 forAnimate">
                 <input
                   type="email"
                   name="email"
@@ -1232,7 +1233,7 @@
                   placeholder="Your Email"
                 />
               </div>
-              <div class="col-12">
+              <div class="col-12 forAnimate">
                 <input
                   type="text"
                   name="subject"
@@ -1240,14 +1241,14 @@
                   placeholder="Subject"
                 />
               </div>
-              <div class="col-12">
+              <div class="col-12 forAnimate">
                 <textarea
                   name="message"
                   id="message"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <div class="col-12">
+              <div class="col-12 forAnimate">
                 <button class="btn">Send Message</button>
               </div>
             </div>
@@ -1260,7 +1261,7 @@
     <div class="footer container-fluid pt-5">
       <div class="container footer-container">
         <div class="row justify-content-center align-items-start">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
             <h3>Bootslander</h3>
             <p class="pb-0">A108 Adam Street</p>
             <p>New York, NY 535022</p>
@@ -1273,7 +1274,7 @@
                 ><i class="fa-brands fa-linkedin"></i>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <h5>Useful Links</h5>
           <ul>
             <li>Home</li>
@@ -1283,7 +1284,7 @@
             <li>Privacy Policy</li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <h5>Our Services</h5>
           <ul>
             <li>Web Design</li>
@@ -1293,7 +1294,7 @@
             <li>Graphic Design</li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 forAnimate">
           <h5>Our Newsletter</h5>
           <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
           <form>
@@ -1315,6 +1316,7 @@
         <p>&copy; Copyright Bootslander All Rights Reserved</p>
       </div>
     </div>
+    <a href="#overlay" class="fixed-icon"><i class="fa-solid fa-arrow-up fs-3"></i></a>
 
 
 
