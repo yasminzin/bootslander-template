@@ -1,4 +1,4 @@
-# Bootslander Template 🏗️🎨  
+# Bootslander Template 🎨  
 
 Bootslander Template is a modern, fully responsive web template designed for a seamless user experience across all devices.
 
