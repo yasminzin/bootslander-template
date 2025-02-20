@@ -12,14 +12,18 @@ setTimeout(() => {
   }, 400);
 }, 1000);
 
-// let countOne = 0;
-// countOneP.innerText = "0";
+const countOneP = document.querySelector(".count-one");
+const countTwoP = document.querySelector(".count-two");
+const countThreeP = document.querySelector(".count-three");
+const countFourP = document.querySelector(".count-four");
 
-// let countTwo = 0;
-// countTwoP.innerText = "0";
+let countOne = 0;
 
-// let countThree = 0;
-// countThreeP.innerText = "0";
+let countTwo = 0;
+
+let countThree = 0;
+
+let countFour = 0;
 
 window.onscroll = function () {
   if (scrollY > 55) {
@@ -28,36 +32,45 @@ window.onscroll = function () {
     nav.style.backgroundColor = "transparent";
     nav.classList.remove("sticky-bar");
   }
-  // if (scrollY > 900) {
-  //   var newInterval = setInterval(() => {
-  //     if (countOne == 4000) {
-  //       clearInterval(newInterval);
-  //       countOneP.innerText = `4,000+`;
-  //       return;
-  //     }
-  //     countOne++;
-  //     countOneP.innerText = `${countOne}+`;
-  //   }, 50);
-  //   var newInterval = setInterval(() => {
-  //     if (countTwo == 49) {
-  //       clearInterval(newInterval);
-  //       countTwoP.innerText = `49`;
-  //       return;
-  //     }
-  //     countTwo++;
-  //     countTwoP.innerText = `${countTwo}`;
-  //   }, 1000);
-  //   var newInterval = setInterval(() => {
-  //     if (countThree == 12) {
-  //       clearInterval(newInterval);
-  //       countThreeP.innerText = `12`;
-  //       return;
-  //     }
-  //     countThree++;
-  //     countThreeP.innerText = `${countThree}`;
-  //   }, 1000);
-  // } 
-};
+  if (scrollY > 1600) {
+    var newInterval = setInterval(() => {
+      if (countOne == 232) {
+        clearInterval(newInterval);
+        countOneP.innerText = `232`;
+        return;
+      }
+      countOne++;
+      countOneP.innerText = `${countOne}`;
+    }, 1000);
+    var newInterval = setInterval(() => {
+      if (countTwo == 521) {
+        clearInterval(newInterval);
+        countTwoP.innerText = `521`;
+        return;
+      }
+      countTwo++;
+      countTwoP.innerText = `${countTwo}`;
+    }, 500);
+    var newInterval = setInterval(() => {
+      if (countThree == 1463) {
+        clearInterval(newInterval);
+        countThreeP.innerText = `1463`;
+        return;
+      }
+      countThree++;
+      countThreeP.innerText = `${countThree}`;
+    }, 180);
+  } 
+    var newInterval = setInterval(() => {
+      if (countFour == 15) {
+        clearInterval(newInterval);
+        countFourP.innerText = `15`;
+        return;
+      }
+      countFour++;
+      countFourP.innerText = `${countFour}`;
+    }, 1500);
+  } 
 
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
