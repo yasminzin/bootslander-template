@@ -4,13 +4,15 @@ const loader = document.querySelector(".loader");
 const nav = document.querySelector(".navbar");
 // const numbers = document.querySelector(".number");
 
-setTimeout(() => {
+function hideLoader() {
   loader.style.transition = "opacity 0.3s ease";
   loader.style.opacity = 0;
   setTimeout(() => {
     loader.style.display = "none";
   }, 400);
-}, 1000);
+}
+
+setTimeout(hideLoader, 1000);
 
 const countOneP = document.querySelector(".count-one");
 const countTwoP = document.querySelector(".count-two");

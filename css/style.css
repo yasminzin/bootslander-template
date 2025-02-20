@@ -131,7 +131,7 @@ nav {
 }
 
 /* Overlay */
-div.overlay {
+section.overlay {
   background-color: #08005eea;
   height: auto;
   width: 100%;
@@ -286,11 +286,11 @@ div.overlay {
   line-height: 24px;
 }
 
-.icon-div {
+.icon-section {
   transition: 0.3s;
 }
 
-.icon-div:hover {
+.icon-section:hover {
   background-color: #32c08d !important;
   i {
     color: white
@@ -334,7 +334,7 @@ div.overlay {
   background-color: #f5f5ff;
 }
 
-.numbers div.rounded-pill {
+.numbers section.rounded-pill {
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -436,7 +436,6 @@ div.overlay {
 .gallery-col img {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   transition: 0.4s;
 }
 
@@ -578,7 +577,7 @@ div.overlay {
   margin: 0;
 }
 
-.team-content div:nth-of-type(1) {
+.team-content section:nth-of-type(1) {
   width: 50px;
   display: inline-block;
   height: 0.7px;
@@ -626,7 +625,7 @@ div.overlay {
   margin: 5px 10px;
 }
 
-.pricing-up .popular div {
+.pricing-up .popular section {
   color: #ffffff;
   border-radius: 10px;
   background-color: #1acc8d;
@@ -694,13 +693,13 @@ div.overlay {
   margin-bottom: 30px;
 }
 
-.pricing-up .advan div {
+.pricing-up .advan section {
   color: color-mix(in srgb, #444444, transparent 30%);
   padding-bottom: 25px;
   font-weight: 500;
 }
 
-.pricing-up .advan div span i {
+.pricing-up .advan section span i {
   color: #059652;
   padding-right: 10px;
 }
@@ -806,6 +805,11 @@ div.overlay {
   display: block;
   width: 200px;
   border-radius: 30px;
+}
+
+.contact-up button:hover {
+  background-color: #1ab07c;
+  color: #ffffff;
 }
 
 /* Footer */
